@@ -4,7 +4,7 @@
 
 body{
     background-color: rgb(39, 39, 35);
-    
+     padding-bottom:110px;
 }
 *{
     margin: 0;
@@ -53,16 +53,16 @@ nav ul li{
     background-repeat: no-repeat;
 } */
  .container {
-    min-height: 70vh;
+    min-height: 65vh;
     background-color: black;
     color: aliceblue;
     font-family: 'Varela Round', sans-serif;
     display: flex;
     flex-direction: column;  /* Ensures elements inside stack vertically */
-    margin: 50px auto;
+    margin: 20px auto;
     width: 80%;              /* Slightly wider for better spacing */
     border-radius: 8px;
-    padding: 34px;
+    padding: 20px;
     background-image: url('https://www.geeksgyaan.com/wp-content/uploads/2019/10/NCS.png');
     background-size: cover;
     background-position: center;
@@ -72,8 +72,11 @@ nav ul li{
 
 
 .Bottom{
-    position: sticky;
-    height: 130px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100px;
     background-color: black;
     color: aliceblue;
     display: flex;
@@ -111,12 +114,12 @@ nav ul li{
        background-color: #1e1e1e; 
  border: 2px solid black;
 
-    width: 34%;
+    width: 30%;
    
     color: white;
     border-radius: 12px;
-    margin: 12px 0;
-    padding: 10px 20px;
+    margin: 6px 0;
+    padding: 8px 14px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     gap: 10px;
