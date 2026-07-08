@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-color: rgb(39, 39, 35);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'ubuntu' ,sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    height:65px;
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width:50px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+/* 
+.container {
+    min-height: 70vh;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 50px auto;
+    width: 70%;
+    border-radius: 8px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+ .container {
+    min-height: 70vh;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column;  /* Ensures elements inside stack vertically */
+    margin: 50px auto;
+    width: 80%;              /* Slightly wider for better spacing */
+    border-radius: 8px;
+    padding: 34px;
+    background-image: url('https://www.geeksgyaan.com/wp-content/uploads/2019/10/NCS.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); /* Optional: gives depth */
+}
+
+
+.Bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* adjust the value to your liking */
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+}
+/* .songItem {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width:100%; 
+    color: black;
+    border-radius: 34px;
+    margin: 12px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    gap: 15px;} */
+    .songItem {
+    height: auto;
+    display: flex;
+     align-items: center;
+       background-color: #1e1e1e; 
+ border: 2px solid black;
+
+    width: 34%;
+   
+    color: white;
+    border-radius: 12px;
+    margin: 12px 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    gap: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+.songList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px; 
+    justify-content: space-between;
+}
+
+/* .songList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+    overflow: hidden;
+} */
+
+
+.songItem img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    
+    border-radius: 50%;
+     border: 2px solid #fcfcfc; /* Spotify green or choose any color */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); /* Optional subtle shadow */
+    transition: transform 0.2s ease;
+}
+
+/* .songItem span {
+    font-weight: 500;
+    font-size: 16px;
+} */
+ .songItem span {
+    font-weight: 500;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.songItem .songListPlay {
+    margin-left: auto; /* Pushes play button + timestamp to the right */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.timestamp {
+    margin: 0 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.timeDisplay {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.songItem img.rotating {
+  animation: rotate 4s linear infinite;
+}
+
+
+
+
